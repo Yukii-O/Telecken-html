@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Sanduíche</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    /* Estilo do botão sanduíche */
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      cursor: pointer;
+      margin: 16px;
+    }
+
+    .menu-btn span {
+      height: 4px;
+      margin: 4px 0;
+      background: #333;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* Estilo do menu */
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100%;
+      background: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px;
+      transition: right 0.3s ease;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .menu-toggle:checked ~ .menu {
+      right: 0;
+    }
+
+    /* Animação do botão sanduíche */
+    .menu-toggle:checked + .menu-btn span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle:checked + .menu-btn span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle:checked + .menu-btn span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+</body>
+</html>

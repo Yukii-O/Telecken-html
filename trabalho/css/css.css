@@ -125,7 +125,7 @@ h1 img {
     background-color: #E7B012;
     padding: 10px;
     position: fixed;
-    top: 100px; /* abaixo do header */
+    top: 100px; 
     z-index: 2;
     width: 100%;
 }
@@ -147,13 +147,13 @@ h1 img {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  width: 100%; /* para ocupar a largura da tela */
+  width: 100%;
   box-sizing: border-box;
 }
 
 .carousel {
-  width: 90%;       /* ocupa 90% da largura da section */
-  max-width: 600px; /* máximo 600px para não ficar gigante */
+  width: 90%;      
+  max-width: 600px; 
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -162,7 +162,7 @@ h1 img {
 
 
 
-/* Ajustes para telas pequenas */
+
 @media (max-width: 480px) {
   .carousel {
     width: 100%;
@@ -208,34 +208,34 @@ h1 img {
       right: 10px;
     }
 
-/* Ajusta cores da tabela */
+
 .carousel-section table {
-    background-color: #fff7e6; /* fundo claro bege para harmonizar */
-    color: #5F2A2A;            /* marrom escuro para o texto */
-    border: 2px solid #E7B012; /* borda dourada */
+    background-color: #fff7e6; 
+    color: #5F2A2A;           
+    border: 2px solid #E7B012; 
     border-radius: 8px;
-    overflow: hidden; /* borda arredondada + overflow */
+    overflow: hidden; 
 }
 
-/* Cabeçalho mais escuro */
+
 .carousel-section thead.table-dark {
-    background-color: #5F2A2A; /* marrom escuro */
-    color: #E7B012;           /* texto dourado */
+    background-color: #5F2A2A; 
+    color: #E7B012;        
 }
 
 /* Linhas alternadas (striped) ajustadas */
 .carousel-section tbody tr:nth-child(odd) {
-    background-color: #f9eec9; /* bege mais escuro */
+    background-color: #f9eec9; 
 }
 
 .carousel-section tbody tr:nth-child(even) {
-    background-color: #fff7e6; /* bege mais claro */
+    background-color: #fff7e6; 
 }
 
-/* Hover mais destacado */
+
 .carousel-section tbody tr:hover {
-    background-color: #e0c879; /* dourado suave ao passar o mouse */
-    color: #5F2A2A;           /* mantém o texto legível */
+    background-color: #e0c879; 
+    color: #5F2A2A;         
     cursor: pointer;
 }
 
@@ -263,10 +263,10 @@ section {
 }
 section:not(:first-of-type) {
   animation-name: section;
-  animation-timeline: view();         /* ativa com base na rolagem */
-  animation-range: entry 0% cover 30%; /* controla a parte do scroll onde ocorre a animação */
-  animation-fill-mode: both;          /* mantém o estado final da animação */
-  animation-duration: 1s;             /* controla a velocidade */
+  animation-timeline: view();         
+  animation-range: entry 0% cover 30%; 
+  animation-fill-mode: both;          
+  animation-duration: 1s;           
 }
 
 
@@ -349,7 +349,7 @@ form{
          grid-row: 2;   
         }
     }
-.padaria img{ /* +/- */
+.padaria img{ 
     width: 100%;
     border-radius: 10px;
     height: 350px;
@@ -386,14 +386,14 @@ form{
         grid-template-rows: repeat(6, 1fr);
     }
     .foto {
-        height: auto; /*altura se ajuste conforme*/
+        height: auto;
         min-height: 100px;
     }
 }
 
 
 .foto1 {
-    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/artic-monkeys.jpg'); /* a "/" pega a imagem na raiz do codigo, html */
+    background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/artic-monkeys.jpg'); /* a "/" pega a imagem na raiz do codigo, html */
 }
 
 .foto2 {
@@ -401,19 +401,19 @@ form{
 }
 
 .foto3 {
-    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/elon-musk.webp');
+    background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/elon-musk.webp');
 }
 
 .foto4 {
-    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/betito.jpeg');
+    background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/betito.jpeg');
 }
 
 .foto5 {
-    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/deftones.jpeg');
+    background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/deftones.jpeg');
 }
 
 .foto6 {
-   background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/link-do-zap.jpeg'); 
+   background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/link-do-zap.jpeg'); 
 }
 
 .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover {
@@ -481,7 +481,7 @@ form{
 
 
 .fotob {
-    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/otiteb.jpeg');
+    background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/otiteb.jpeg');
 }
 
 /* .fotob1 {
@@ -530,12 +530,3 @@ class nome :: content */
     100% {background-color:red; left:0px; top:0px;}
   }
   
-  /* The element to apply the animation to */
-  /*div {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-  } */

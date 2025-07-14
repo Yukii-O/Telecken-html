@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Padaria do Betito</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <h1>
+            <img src="img/pao.png" alt="Logo da padaria">
+            <p>Padaria do Betito</p>
+        </h1>
+    
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    
+
+    <nav class="top-nav">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav> 
+
+    <main>
+
+
+
+<section class="carousel-section">
+  <div id="carouselContainer">
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide"><img src="/img/oferta1.webp" alt="Slide 1"></div>
+        <div class="slide"><img src="/img/capa-de-facebook-desenhada-a-mao-de-padaria_23-2149486152.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="/img/conjunto-de-modelo-de-postagem-do-instagram-de-padaria_23-2149396595.avif" alt="Slide 3"></div>
+        <div class="slide"><img src="/img/modelo-de-design-de-banner-de-comida_23-2149406643.jpg" alt="Slide 4"></div>
+      </div>
+      <button id="prevBtn">&#8592;</button>
+      <button id="nextBtn">&#8594;</button>
+    </div>
+  </div>
+
+  <div id="tableContainer" style="display: none;">
+    <div class="table-responsive mt-4">
+      <table class="table table-striped table-bordered text-center">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Produto</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Estoque</th>
+            <th scope="col">Código</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Empada de Frango</td>
+            <td>A melhor empada do mundo</td>
+            <td>R$ 5,00</td>
+            <td>120</td>
+            <td>EMP001</td>
+          </tr>
+          <tr>
+            <td>Pão Francês</td>
+            <td>Pão fresquinho todos os dias</td>
+            <td>R$ 0,80</td>
+            <td>500</td>
+            <td>PAO123</td>
+          </tr>
+          <tr>
+            <td>Bolo de Chocolate</td>
+            <td>Receita especial do Carlos</td>
+            <td>R$ 80,00</td>
+            <td>5</td>
+            <td>BOL555</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+</section>
+</section>
+
+        <section id="home">
+            <!--ofertas. futuramente irei pôr   > vou fazer com carousel (bootstrap)-->
+             <div>
+              <h2><p>Confira nossas ofertas!</p></h2> 
+
+
+             </div>
+            <!--ofertas. futuramente irei pôr-->
+            <div class="container">
+                <h2><p>Veja nossos produtos mais vendidos!</p></h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="produto">
+                            <!-- trabalho de picture - mudar a imagem em certo tamanho 2-->
+                             <picture>
+                            <source srcset="img/empada-de-camarao-2.webp" media="(width < 768px)">
+                            <source srcset="img/empada-de-camarao-3.jpg" media="(width > 1300px)">
+                            <img src="img/796246837-empada-de-camarao.webp" alt="Empada" class="img-fluid">
+                             </picture>
+                            <h3>Empadada de frango</h3>
+                            <p>A melhor empada de frango do mundo</p>
+                            <p><strong>R$ 5,00</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="produto">
+                            <!-- trabalho de picture - mudar a imagem em certo tamanho 2-->
+                             <picture>
+                            <source srcset="img/pao-frances-2.jpg" media="(width < 768px)">
+                            <source srcset="img/pao-frances-3.webp" media="(width > 1300px)">
+                            <img src="img/pao-frances.jpg" alt="Pão francês" class="img-fluid">
+                             </picture>
+                            <h3>Pão francês</h3>
+                            <p>Pão francês que não é da França</p>
+                            <p><strong>R$ 0,80</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="produto">
+                            <img src="img/bolo-de-chocolate-do-carlos.avif" alt="Bolo do Carlos" class="img-fluid">
+                            <h3>Bolo de chocolate do Carlos</h3>
+                            <p>O bolo de chocolate que o Carlos esqueceu de buscar</p>
+                            <p><strong>R$ 80,00</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <div class="container">
+                <h2><p>Outros Produtos que ninguém liga</p></h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="produto">
+                            <img src="img/bolo-ouro.jpg" alt="Bolo de ouro" class="img-fluid">
+                            <h3>Bolo de ouro</h3>
+                            <p>Um bolo banhado a ouro não comestível</p>
+                            <p><strong>R$ 1.000,00</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="produto">
+                            <img src="img/betito.jpeg" alt="Betito" class="img-fluid">
+                            <h3>Betito</h3>
+                            <p>Não pergunte por quê.</p>
+                            <p><strong>Grátis</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="produto">
+                        <!-- trabalho de picture - mudar a imagem em certo tamanho 2-->
+                         <picture>
+                            <source srcset="img/bolo-de-morango-2.jpg" media="(width < 768px)">
+                            <source srcset="img/bolo-de-morango-3.jpg" media="(width > 1300px)">
+                            <img src="img/morango.jpg" alt="Bolo de morango" class="img-fluid">
+                         </picture>
+                            <h3>Bolo de morango</h3>
+                            <p>Apenas um bolo de morango</p>
+                            <p><strong>R$ 40,00</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- formulário exercício 1 -->
+        <section>
+            <div class="figura_form">
+            <form method="post" action="banco.php" >
+                <label>Nome:</label>
+                <input type="text" name="nome" >
+                <label>Senha: </label>
+                <input type="password" name="senha" >
+                <label>Comentário:</label>
+                <textarea name="comentario" cols="10" rows="4" placeholder="digite sua opinião"></textarea>
+                <input type="submit" name="enviar" value="Enviar">
+            </form>
+            <div class="padaria">
+            <picture>
+            <source srcset="img/padaria-2.jpg" media="(width > 900px)">
+            <img src="img/Fachada-de-padaria.jpg" alt="nossa padaria">
+            </picture>
+            </div>
+        </div>
+        </section>
+         <section>
+            <h2><span class="letter">Nossos colaboradores</span></h2>
+            <div class="mosaico">
+                <div class="foto foto1"></div>
+                <div class="foto foto2"></div>
+                <div class="foto foto3"></div>
+                <div class="foto foto4"></div>
+                <div class="foto foto5"></div>
+                <div class="foto foto6"></div>
+            </div>
+         </section>
+        <!-- formulário execício 1 -->
+         <section>
+
+                <div class="foto11 fotob"></div>
+
+         </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Padaria do Betito.</p>
+            <p>Contatos: <br>31 3227-2071<br>site@padariadobetito.com.br</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+    <script src="carousel.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

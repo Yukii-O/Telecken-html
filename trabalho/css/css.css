@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'Inspiration Calligraphy';
+    src: url('inspiration-2.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5F2A2A;
+}
+
+header {
+    background-color: #5F2A2A;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+/*menu*/
+.menu-toggle {
+    display: absolute;
+  }
+
+  .menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+
+    position: absolute;
+    top: 20px;    
+    right: 20px;   
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    z-index: 5;  
+
+    
+}
+
+.menu-btn span {
+    height: 4px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu {
+
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background: #5F2A2A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    transition: right 0.3s ease;
+    z-index: 4;
+    border: solid #E7B012 5px; 
+}
+
+.menu a {
+    color: #E7B012;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+
+.menu-toggle:checked ~ .menu {
+    right: 0;
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(1) {
+    /* background-color: #E7B012; */
+    transform: rotate(45deg) translate(10px, 11px);
+}
+
+
+.menu-toggle:checked + .menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -5px);
+
+}
+
+
+/*menu*/
+
+h1 {
+    font-family: 'Inspiration Calligraphy';
+    text-decoration: none;
+    /*color: white; /*black*/
+    display: flex;
+    align-items: center;
+}
+h1 p{
+color: white; /*#E7B012*/
+}
+
+h1 img {
+    height: 60px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E7B012;
+    padding: 10px;
+    position: fixed;
+    top: 100px; /* abaixo do header */
+    z-index: 2;
+    width: 100%;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+    scroll-behavior: smooth;
+}
+
+.top-nav a:hover {
+    background-color: rgb(191, 143, 6);
+}
+
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%; /* para ocupar a largura da tela */
+  box-sizing: border-box;
+}
+
+.carousel {
+  width: 90%;       /* ocupa 90% da largura da section */
+  max-width: 600px; /* máximo 600px para não ficar gigante */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+  .carousel {
+    width: 100%;
+  }
+}
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+    .slide {
+      min-width: 100%;
+      user-select: none;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      pointer-events: none;
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 30px;
+      padding: 15px 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      user-select: none;
+      transition: background 0.3s;
+      z-index: 1;
+    }
+    button:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    #prevBtn {
+      left: 10px;
+    }
+    #nextBtn {
+      right: 10px;
+    }
+
+/* Ajusta cores da tabela */
+.carousel-section table {
+    background-color: #fff7e6; /* fundo claro bege para harmonizar */
+    color: #5F2A2A;            /* marrom escuro para o texto */
+    border: 2px solid #E7B012; /* borda dourada */
+    border-radius: 8px;
+    overflow: hidden; /* borda arredondada + overflow */
+}
+
+/* Cabeçalho mais escuro */
+.carousel-section thead.table-dark {
+    background-color: #5F2A2A; /* marrom escuro */
+    color: #E7B012;           /* texto dourado */
+}
+
+/* Linhas alternadas (striped) ajustadas */
+.carousel-section tbody tr:nth-child(odd) {
+    background-color: #f9eec9; /* bege mais escuro */
+}
+
+.carousel-section tbody tr:nth-child(even) {
+    background-color: #fff7e6; /* bege mais claro */
+}
+
+/* Hover mais destacado */
+.carousel-section tbody tr:hover {
+    background-color: #e0c879; /* dourado suave ao passar o mouse */
+    color: #5F2A2A;           /* mantém o texto legível */
+    cursor: pointer;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    /*color: white;*/
+}
+
+h2 p{
+color: white;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 150px;
+}
+
+section {
+    padding: 40px 10px;
+    background-color: #5F2A2A;
+    
+}
+section:not(:first-of-type) {
+  animation-name: section;
+  animation-timeline: view();         /* ativa com base na rolagem */
+  animation-range: entry 0% cover 30%; /* controla a parte do scroll onde ocorre a animação */
+  animation-fill-mode: both;          /* mantém o estado final da animação */
+  animation-duration: 1s;             /* controla a velocidade */
+}
+
+
+@keyframes section {
+  from { opacity: 0;  }
+  to   { opacity: 1; }
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    background-color: #E7B012;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);/*h=13d7597*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 18px;
+    color: #333;
+}
+
+.produto strong {
+    font-size: 20px;
+    color: #5F2A2A;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    align-content: start;
+    gap: 5px;
+    color: white;
+    margin-right: 50px;
+    /* grid-row: 1; */
+    }
+    .figura_form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1;
+    /* margin-left: 5px; */
+    
+    }
+    @media (width < 900px ){
+        .figura_form{
+            grid-template-columns: 1fr;
+        }
+        form{
+         grid-row: 2;   
+        }
+    }
+.padaria img{ /* +/- */
+    width: 100%;
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.letter {
+    display: inline-block;
+    color:white;
+}
+
+.mosaico {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.foto {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 200px; /*altura mínima p img */
+}
+
+@media (max-width: 768px) {
+    .mosaico {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .foto {
+        height: auto; /*altura se ajuste conforme*/
+        min-height: 100px;
+    }
+}
+
+
+.foto1 {
+    background-image: url('/img/artic-monkeys.jpg'); /* a "/" pega a imagem na raiz do codigo, html */
+}
+
+.foto2 {
+    background-image: url('/img/ricardinho.webp');
+}
+
+.foto3 {
+    background-image: url('/img/elon-musk.webp');
+}
+
+.foto4 {
+    background-image: url('/img/betito.jpeg');
+}
+
+.foto5 {
+    background-image: url('/img/deftones.jpeg');
+}
+
+.foto6 {
+   background-image: url('/img/link-do-zap.jpeg'); 
+}
+
+.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+/* .mosaico1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+} */
+
+.foto11 {
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 200px; /*altura mínima p img */
+    /*transition: 2s ease-in-out; */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-color: red; 
+  position: relative;
+  left: 0px;
+  top: -70px; 
+   animation-name: animacao;  
+   animation-duration: 4s; 
+  animation-iteration-count: infinite;
+  transition: 2s ease-in-out;  
+}
+
+@keyframes animacao {
+  /* 0%   {left:0px; top:-70px;}   
+  25%  {left:285px; top:-70px;}
+  50%  {left:285px; top:30px;}
+  75%  {left:0px; top:30px;}
+  100% {left:0px; top:-70px;} */
+    0%   {left:0px; top:-70px;}   
+  25%  {left:90vw; top:-70px;}
+  50%  {left:90vw; top:30px;}
+  75%  {left:0px; top:30px;}
+  100% {left:0px; top:-70px;}
+}
+
+/* @media (max-width: 768px) {
+    .mosaico1 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .foto1 {
+        height: auto; /*altura se ajuste conforme*/
+       /* min-height: 100px;
+    }
+} */
+
+
+.fotob {
+    background-image: url('/img/otiteb.jpeg');
+}
+
+/* .fotob1 {
+    background-image: url('/img/deftones.jpeg');
+}
+
+.fotob2 {
+    background-image: url('/img/oferta1.webp');
+} */
+
+@keyframes fotob{
+from {}
+to{transform: rotateX(180deg)}
+}
+
+.fotob:hover{
+    transform: rotate(360deg);
+    /*animation-name: fotob;
+    animation_duration: 4s;*/
+} 
+
+footer {
+    background-color: #E7B012;
+    color: white;
+    padding: 20px 0;
+    text-align: start;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* class nome ::before
+class nome :: content */
+
+
+/*-----------------------------------------------------------*/
+
+
+ /* The animation code */
+ @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  /*div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  } */

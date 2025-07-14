@@ -393,28 +393,27 @@ form{
 
 
 .foto1 {
-    background-image: url('img/artic-monkeys.jpg'); /* a "/" pega a imagem na raiz do codigo, html */
+    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/artic-monkeys.jpg'); /* a "/" pega a imagem na raiz do codigo, html */
 }
 
 .foto2 {
-    background-image: url('img/ricardinho.webp');
+    background-image: url('https://raw.githubusercontent.com/Yukii-O/Telecken-html/refs/heads/main/trabalho/img/ricardinho.webp');
 }
 
 .foto3 {
-    background-image: url('img/elon-musk.webp');
+    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/elon-musk.webp');
 }
 
 .foto4 {
-    background-image: url('img/betito.jpeg');
+    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/betito.jpeg');
 }
 
 .foto5 {
-    background-image: url('img/deftones.jpeg');
+    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/deftones.jpeg');
 }
 
 .foto6 {
-   background-image: url('
-       img/link-do-zap.jpeg'); 
+   background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/link-do-zap.jpeg'); 
 }
 
 .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover {
@@ -482,7 +481,7 @@ form{
 
 
 .fotob {
-    background-image: url('img/otiteb.jpeg');
+    background-image: url('https://github.com/Yukii-O/Telecken-html/blob/main/trabalho/img/otiteb.jpeg');
 }
 
 /* .fotob1 {

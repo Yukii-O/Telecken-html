@@ -1,0 +1,107 @@
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #00796b, #004d40);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      position:fixed;
+      z-index: 100;
+      width:100%;
+      top:0;
+    }
+    img{
+    width:50%;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    section img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #00796b;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    input, select {
+      padding: 0.6rem;
+      margin-top: 0.5rem;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      transition: border 0.3s;
+    }
+    input:focus, select:focus {
+      border: 2px solid #00796b;
+      outline: none;
+    }
+    button {
+      margin-top: 1rem;
+      background: linear-gradient(90deg, #00796b, #004d40);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #004d40, #00332c);
+      transform: scale(1.05);
+    }
+    .hidden {
+      display: none;
+    }
+    .feedback {
+      margin-top: 0.8rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .correct {
+      color: #2e7d32;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .wrong {
+      color: #c62828;
+      animation: shake 0.4s;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
